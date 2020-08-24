@@ -78,7 +78,7 @@ int OS_AddThreads(void(*funcThread0)(void),
 // initialize RunPt
 // initialize four stacks, including initial PC
 //***YOU IMPLEMENT THIS FUNCTION*****
-int32_t statu 
+int32_t status; 
   status = StartCritical(); 
   threadblocks[0].next = &threadblocks[1]; // 0 points to 1 
   threadblocks[1].next = &threadblocks[2]; // 1 points to 2 
